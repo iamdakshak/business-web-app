@@ -1,0 +1,100 @@
+.outerWrapper {
+  background-color: white;
+  border: 2px solid #d1d0fd;
+  border-radius: 4px;
+  .innerWrapper {
+    padding: 24px;
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      row-gap: 15px;
+      .headerTextArea {
+        display: flex;
+        flex-direction: column;
+        // align-self: center;
+        .headerText {
+          font-family: "Inter", sans-serif;
+          font-weight: bold;
+          line-height: 14px;
+        }
+        .headerDesc {
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          color: #b8b8b8;
+          line-height: 30px;
+        }
+      }
+      .price {
+        .priceBody {
+          font-family: "Inter", sans-serif;
+          font-weight: bold;
+          font-size: 50px;
+        }
+      }
+    }
+    .separator {
+      height: 1px;
+      border-radius: 2px;
+      background-color: #d5d7de;
+      margin: 16px 0;
+    }
+    .body {
+      display: flex;
+      flex-direction: column;
+      .listItem {
+        display: flex;
+        flex-direction: column;
+        .cardContainer {
+          display: flex;
+          flex-direction: row;
+          .icon {
+            width: 30px;
+            & > :first-child {
+              height: 30px;
+            }
+          }
+          .value {
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            align-self: center;
+          }
+          .disbaledValue {
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            align-self: center;
+            color: #b8b8b8;
+          }
+        }
+      }
+      .btnWrapper {
+        padding-top: 24px;
+        .getStartedButton {
+          background: #7d7ae3;
+          border: none;
+          border-radius: 7px;
+          color: #fff;
+          font-size: 16px;
+          min-height: 36px;
+          padding: 0;
+          width: 100px;
+          .buttonText {
+            text-transform: none;
+            transition: none;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.bigPlanCard {
+  height: 412px;
+}
+.outerWrapper:hover {
+  border: 2px solid #d1d0fd;
+  border-radius: 4px;
+  background-color: #e4e4fa;
+}

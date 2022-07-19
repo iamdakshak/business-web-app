@@ -1,0 +1,27 @@
+.buttonContainer {
+  background-color: #0096ff;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  // width: 100%;
+  width: auto;
+  cursor: pointer;
+  border-radius: 4px;
+  .btnText {
+    color: #ffffff;
+  }
+}
+
+.primaryBtn {
+  background-color: #0096ff !important;
+}
+.secondaryBtn {
+  background-color: #fff;
+  .btnText {
+    color: #000;
+  }
+}

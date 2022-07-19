@@ -1,0 +1,83 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  .landingPage {
+    background-image: url(https://images.unsplash.com/photo-1657894825744-1da6d5fbf24d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+    width: 100%;
+    height: calc(60vh);
+    .textContainer {
+      padding: 50px 80px;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      .headerText {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 32px;
+        font-weight: bold;
+        color: #fff;
+      }
+      .textDescription {
+        padding-top: 10px;
+        color: #b3b0b0;
+        width: 80%;
+      }
+      .readMoreBtn {
+        width: 150px;
+        padding-top: 10px;
+      }
+    }
+  }
+  .middleContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .firstRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .middleContentLeft {
+        align-items: flex-start;
+        border: 3px solid transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 200px;
+        border-radius: 15px;
+        border-width: 1px;
+        width: auto;
+        max-width: 300px;
+        margin: 50px 20px;
+        .readMoreBtn {
+          width: 150px;
+          padding-top: 10px;
+        }
+        .companyName {
+          color: #000;
+          font-weight: 500;
+        }
+        .companyInfo {
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 28px;
+        }
+      }
+      .imageCards {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    .secondRow {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 20px;
+    }
+  }
+  .differencesContainer {
+    display: flex;
+    justify-content: center;
+  }
+}

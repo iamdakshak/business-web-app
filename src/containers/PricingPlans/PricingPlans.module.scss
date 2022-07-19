@@ -1,0 +1,40 @@
+.outerWrapper {
+  background-color: #41455f;
+  height: 600px;
+  .innerWrapper {
+    .subText {
+      text-align: center;
+      padding-bottom: 6px;
+      padding-top: 10px;
+      color: #fff;
+      .text {
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .heading {
+      color: #fff;
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 22px;
+      text-align: center;
+      line-height: 20px;
+      padding-bottom: 4px;
+    }
+    .cardWrapper {
+      width: 988px;
+      align-items: center;
+      align-self: center;
+      display: flex;
+      margin: auto;
+      padding-top: 100px;
+      column-gap: 44px;
+      .cardContainer {
+        max-width: 310px;
+        width: 30%;
+      }
+    }
+  }
+}

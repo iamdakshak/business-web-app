@@ -1,0 +1,51 @@
+.navigation {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(#41455f, 0.8);
+  border-radius: 4px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px 80px;
+  justify-content: space-between;
+  background-color: #41455f;
+  border-radius: 4px;
+
+  .companyLogo {
+    color: #fff;
+    font-size: 28px;
+    display: flex;
+    align-self: center;
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+}
+
+.navbarItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+.navbarLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.search {
+  display: flex;
+  margin: 16px 50px 16px 70px;
+  cursor: pointer;
+  color: whitesmoke;
+  & > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.button {
+  color: navy;
+}
