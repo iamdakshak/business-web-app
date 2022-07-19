@@ -1,0 +1,51 @@
+.mainContainer {
+  // width: 100%;
+  .leftContainer {
+    width: 70%;
+    .wrapper {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .middleContentLeft {
+        align-items: flex-start;
+        border: 3px solid transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 200px;
+        border-radius: 15px;
+        border-width: 1px;
+        width: auto;
+        max-width: 50%;
+        margin: 50px 20px;
+        .readMoreBtn {
+          width: 150px;
+          padding-top: 10px;
+        }
+        .companyName {
+          color: #000;
+          font-weight: 500;
+        }
+        .companyInfo {
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 28px;
+        }
+        .companyDescription {
+          padding-top: 10px;
+        }
+      }
+      .rightContainer {
+        width: 30%;
+        z-index: -100;
+        .imageContainer {
+          transform: rotate(-45deg);
+          img {
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
