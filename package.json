@@ -2,7 +2,7 @@
   "name": "business-web-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dakshaknagrale.in/business-web-app/",
+  "homepage": "https://iamdakshak.github.io/business-web-app/",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
