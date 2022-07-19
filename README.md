@@ -1,6 +1,6 @@
 ### Business Website Trial Project
 
-Designed & Develloped by DAkShAk
+Designed & Developed by DAkShAk
 
 ## To set up project
 
