@@ -1,7 +1,5 @@
 import { useTranslation } from "react-i18next";
 import styles from "./PlanCard.module.scss";
-import check from "src/assets/icons/check.png";
-import close from "src/assets/icons/close.png";
 import Button from "../Button/Button";
 
 const PlanCard = (props: { data?: any }) => {
@@ -35,7 +33,6 @@ const PlanCard = (props: { data?: any }) => {
                       data-icon={lists?.icon}
                       style={{ color: `${lists?.iconColor}` }}
                     ></span>
-                    {/* <img src={t(lists?.icon) === "check" ? check : close} /> */}
                   </span>
                   <span
                     className={

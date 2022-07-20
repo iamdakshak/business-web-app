@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
+
+.wrapper {
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  .wrapper_inner {
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+
+    .box_wrapper {
+      top: 50%;
+      left: 50%;
+      margin-top: 40px;
+      z-index: 1;
+
+      .box {
+        position: relative;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+        width: 450px;
+        background: #fff;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        padding: 60px 30px 20px 30px;
+
+        .box_inner {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          .userComment {
+            font-family: "Roboto";
+            font-weight: bold;
+          }
+          .review {
+            font-family: "Roboto";
+            color: #b9bec7;
+            font-size: 14px;
+          }
+          .userName {
+            font-family: "Roboto";
+            font-weight: bold;
+          }
+          .userDesignation {
+            font-family: "Roboto";
+            font-weight: bold;
+          }
+        }
+        .avatar {
+          border-radius: 50%;
+          top: -40px;
+          margin-left: -10%;
+          left: 50%;
+          position: absolute;
+        }
+        .avatar img {
+          width: 80px;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+.wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.3;
+}

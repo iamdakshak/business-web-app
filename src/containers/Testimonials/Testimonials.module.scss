@@ -17,4 +17,17 @@
       color: #1a2230;
     }
   }
+  .cardsContainer {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    .cardItems {
+      display: flex;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 20px;
+    }
+  }
 }
