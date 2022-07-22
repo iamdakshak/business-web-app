@@ -1,3 +1,4 @@
+@import "src/global.scss";
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -14,11 +15,13 @@
     .headerText {
       font-size: 22px;
       font-weight: 500;
-      color: #1a2230;
+      color: $text_color_black;
     }
   }
   .cardsContainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

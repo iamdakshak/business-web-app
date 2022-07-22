@@ -1,6 +1,8 @@
+@import "src/global.scss";
 .mainContainer {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   .landingPage {
     background-image: url(https://images.unsplash.com/photo-1657894825744-1da6d5fbf24d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
     width: 100%;
@@ -54,7 +56,7 @@
           padding-top: 10px;
         }
         .companyName {
-          color: #000;
+          color: $text_color_black;
           font-weight: 500;
         }
         .companyInfo {

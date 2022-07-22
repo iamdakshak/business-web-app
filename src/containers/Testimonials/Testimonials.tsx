@@ -15,9 +15,9 @@ const Testimonials = (props?: any) => {
         </div>
         <div className={styles.cardsContainer}>
           <div className={styles.cardItems}>
-            {UserTestimonialData?.map((data) => (
+            {/* {UserTestimonialData?.map((data) => (
               <ProfileCard data={data} />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

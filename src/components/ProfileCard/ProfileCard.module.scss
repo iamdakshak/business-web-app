@@ -1,3 +1,4 @@
+@import "src/global.scss";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
 
@@ -8,7 +9,7 @@
   height: 100%;
 
   .wrapper_inner {
-    z-index: 3;
+    // z-index: 3;
     height: 100%;
     width: 100%;
 
@@ -43,7 +44,7 @@
           }
           .review {
             font-family: "Roboto";
-            color: #b9bec7;
+            color: $text_color_gray;
             font-size: 14px;
           }
           .userName {

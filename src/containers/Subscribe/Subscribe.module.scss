@@ -1,10 +1,11 @@
+@import "src/global.scss";
 .subscribeWrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
   .container {
-    background-image: url("https://media.gettyimages.com/photos/businesswoman-lying-on-bed-and-working-on-laptop-while-using-n-hotel-picture-id1326807976");
+    background-image: url("https://media.gettyimages.com/photos/businesswoman-lying-on-bed-and-working-on-laptop-while-using-n-hotel-picture-id1326807976?s=1024x1024");
     align-items: center;
     border: 3px solid transparent;
     display: flex;
@@ -54,6 +55,29 @@
       }
       .subscribeButton {
       }
+    }
+  }
+}
+
+@include iPad_Pro_portrait {
+  .subscribeWrapper {
+    .container {
+      background-attachment: unset;
+    }
+  }
+}
+@include iPad_Pro_landscape {
+  .subscribeWrapper {
+    .container {
+      background-attachment: unset;
+    }
+  }
+}
+
+@include iPad_portrait {
+  .subscribeWrapper {
+    .container {
+      column-gap: 10px;
     }
   }
 }

@@ -1,0 +1,43 @@
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+$text_color_black: #1a2230;
+$text_header_color: #1a2230;
+$text_color_blue: #0096ff;
+$text_color_white: #ffffff;
+$text_color_gray: #b9bec7;
+
+$button-background-primary: #0096ff;
+$button-background-secondary: #ffffff;
+
+$theme_color_dark: #41455f;
+
+@mixin mobile_devices {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin iPad_portrait {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin iPad_landscape {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin iPad_Pro_portrait {
+  @media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin iPad_Pro_landscape {
+  @media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    @content;
+  }
+}

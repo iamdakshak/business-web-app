@@ -1,48 +1,15 @@
+@import "src/global.scss";
 .wrapper {
-  background: #41455f;
+  background: $theme_color_dark;
   width: 100%;
   display: flex;
   justify-content: center;
   .innerWrapper {
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-top: 24px;
-    .header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      .headerText {
-        font-family: "Inter", sans-serif;
-        font-weight: 500;
-        font-size: 28px;
-        color: white;
-      }
-      .btnWrapper {
-        .getStartedButton {
-          background: white;
-          border: none;
-          border-radius: 7px;
-          font-weight: bold;
-          color: #716cf3;
-          font-size: 16px;
-          min-height: 36px;
-          padding: 0;
-          width: 90px;
-          .buttonText {
-            text-transform: none;
-            transition: none;
-            font-size: 12px;
-          }
-        }
-      }
-    }
-    .separator {
-      height: 1px;
-      border-radius: 2px;
-      margin: 16px 0;
-      border-bottom: 2px solid white;
-    }
+
     .body {
       display: flex;
       flex-direction: row;
@@ -52,6 +19,7 @@
       font-weight: 500;
       column-gap: 30px;
       justify-content: space-around;
+      padding: 22px;
       .contact {
         display: flex;
         flex-direction: column;
@@ -200,6 +168,25 @@
           font-size: 14px;
           font-weight: 500;
         }
+      }
+    }
+  }
+}
+
+@include iPad_Pro_portrait {
+  .wrapper {
+    .innerWrapper {
+      .body {
+        padding: 22px;
+      }
+    }
+  }
+}
+@include iPad_portrait {
+  .wrapper {
+    .innerWrapper {
+      .body {
+        column-gap: 22px;
       }
     }
   }

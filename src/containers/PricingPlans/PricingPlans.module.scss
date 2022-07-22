@@ -1,3 +1,4 @@
+@import "src/global.scss";
 .outerWrapper {
   background-color: #41455f;
   height: 600px;
@@ -34,6 +35,16 @@
       .cardContainer {
         max-width: 310px;
         width: 30%;
+      }
+    }
+  }
+}
+
+@include iPad_portrait {
+  .outerWrapper {
+    .innerWrapper {
+      .cardWrapper {
+        width: calc(100% - 60px);
       }
     }
   }

@@ -1,3 +1,4 @@
+@import "src/global.scss";
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -54,7 +55,7 @@
           padding-top: 10px;
         }
         .companyName {
-          color: #000;
+          color: $text_color_black;
           font-weight: 500;
         }
         .companyInfo {
@@ -79,5 +80,26 @@
   .differencesContainer {
     display: flex;
     justify-content: center;
+  }
+}
+
+@include iPad_Pro_portrait {
+  .wrapper {
+    .landingPage {
+      height: calc(30vh);
+    }
+  }
+}
+
+@include iPad_portrait {
+  .wrapper {
+    .middleContent {
+      .firstRow {
+        flex-wrap: wrap;
+      }
+      .secondRow {
+        flex-wrap: wrap;
+      }
+    }
   }
 }

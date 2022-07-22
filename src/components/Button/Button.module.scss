@@ -1,5 +1,6 @@
+@import "src/global.scss";
 .buttonContainer {
-  background-color: #0096ff;
+  background-color: $button-background-primary;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -12,16 +13,16 @@
   cursor: pointer;
   border-radius: 4px;
   .btnText {
-    color: #ffffff;
+    color: $text_color_white;
   }
 }
 
 .primaryBtn {
-  background-color: #0096ff !important;
+  background-color: $button-background-primary !important;
 }
 .secondaryBtn {
-  background-color: #fff;
+  background-color: $button-background-secondary;
   .btnText {
-    color: #000;
+    color: $text_color_black;
   }
 }

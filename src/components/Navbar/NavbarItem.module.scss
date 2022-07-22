@@ -1,7 +1,14 @@
+@import "src/global.scss";
 .navLink {
   padding: 0 20px;
   & > a {
     color: #f0f0f0;
     text-decoration: none;
+  }
+}
+
+@include iPad_portrait {
+  .navLink {
+    padding: 0 6px;
   }
 }

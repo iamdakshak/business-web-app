@@ -1,3 +1,4 @@
+@import "src/global.scss";
 .navigation {
   display: flex;
   width: 100%;
@@ -48,4 +49,26 @@
 }
 .button {
   color: navy;
+}
+
+@include iPad_Pro_portrait {
+  .navContainer {
+    padding: 20px 58px;
+  }
+}
+@include iPad_landscape {
+  .navContainer {
+    padding: 14px;
+  }
+  .search {
+    margin: 16px 22px 16px 10px;
+  }
+}
+@include iPad_portrait {
+  .navContainer {
+    padding: 14px;
+  }
+  .search {
+    margin: 16px;
+  }
 }
